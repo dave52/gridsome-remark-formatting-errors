@@ -1,0 +1,50 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-nav",
+      "description": "The Shell collapsible side nav that houses the application's primary navigation. On medium screen sizes, the side nav automatically collapses to give users more screen real estate. Users can choose to expand it if they prefer.",
+      "attributes": [
+        {
+          "name": "open",
+          "description": "Indicates whether the side nav is open or not. (MOBILE ONLY)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapsed",
+          "description": "Indicates when the side nav is collapsed.",
+          "default": "\"_isNavCollapsed\""
+        },
+        {
+          "name": "collapse-label",
+          "description": "For customizing the text for the collapse button at the bottom of the side nav. The default value is \"Collapse.\"",
+          "type": "string",
+          "default": "\"Collapse\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "Indicates whether the side nav is open or not. (MOBILE ONLY)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "collapsed",
+          "attribute": "collapsed",
+          "description": "Indicates when the side nav is collapsed.",
+          "default": "\"_isNavCollapsed\""
+        },
+        {
+          "name": "collapseLabel",
+          "attribute": "collapse-label",
+          "description": "For customizing the text for the collapse button at the bottom of the side nav. The default value is \"Collapse.\"",
+          "type": "string",
+          "default": "\"Collapse\""
+        }
+      ]
+    }
+  ]
+}

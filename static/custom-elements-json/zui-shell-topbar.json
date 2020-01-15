@@ -1,0 +1,39 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-topbar",
+      "description": "There are two parts to the topbar: global and app. The top white bar is our global topbar, which has Zywave branding and includes global functionality. The bottom colored bar is our app bar, which is tailored to the application or Cloud the user is in. Sometimes it is branded with the product name if not part of a Cloud.\r\n\r\n### Example\r\n```html\r\n<zui-shell-topbar no-appbar no-scroll-animation unresolved>\r\n   <zui-logo unresolved></zui-logo>\r\n   <zui-search unresolved></zui-search>\r\n</zui-shell-topbar>\r\n```",
+      "attributes": [
+        {
+          "name": "no-appbar",
+          "description": "To only want to include the global topbar and not the app bar (Optional)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-scroll-animation",
+          "description": "To opt out of the topbar's off-screen scrolling animation. (Optional)\r\nInternet Explorer 11 does not include this animation.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "noAppBar",
+          "attribute": "no-appbar",
+          "description": "To only want to include the global topbar and not the app bar (Optional)",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noScrollAnimation",
+          "attribute": "no-scroll-animation",
+          "description": "To opt out of the topbar's off-screen scrolling animation. (Optional)\r\nInternet Explorer 11 does not include this animation.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

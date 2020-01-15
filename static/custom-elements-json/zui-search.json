@@ -1,0 +1,46 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-search",
+      "attributes": [
+        {
+          "name": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "no-submit",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "noSubmit",
+          "attribute": "no-submit",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "search"
+        }
+      ]
+    }
+  ]
+}

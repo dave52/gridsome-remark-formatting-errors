@@ -1,0 +1,26 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-button-dropdown",
+      "description": "### Example\r\n```html\r\n<zui-button-dropdown unresolved>\r\n   Dropdown trigger\r\n   <button slot=\"option\">Option 1</button>\r\n   <button slot=\"option\">Option 2</button>\r\n   <button slot=\"option\">Option 3</button>\r\n   <a href=\"#\" slot=\"option\">Option 4</a>\r\n</zui-button-dropdown>\r\n```",
+      "attributes": [
+        {
+          "name": "open",
+          "description": "This attribute will decide whether the submenu is open or not",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "This attribute will decide whether the submenu is open or not",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

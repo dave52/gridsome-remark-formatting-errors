@@ -1,0 +1,23 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-logo",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    }
+  ]
+}

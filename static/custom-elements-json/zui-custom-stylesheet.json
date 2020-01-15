@@ -1,0 +1,14 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-custom-stylesheet",
+      "properties": [
+        {
+          "name": "href",
+          "type": "string | null"
+        }
+      ]
+    }
+  ]
+}

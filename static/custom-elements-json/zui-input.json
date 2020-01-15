@@ -1,0 +1,82 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-input",
+      "attributes": [
+        {
+          "name": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxlength",
+          "type": "number",
+          "default": "524288"
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "readonly",
+          "attribute": "readonly",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maxlength",
+          "attribute": "maxlength",
+          "type": "number",
+          "default": "524288"
+        }
+      ],
+      "events": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "change"
+        }
+      ]
+    }
+  ]
+}

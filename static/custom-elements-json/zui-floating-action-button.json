@@ -1,0 +1,26 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-fab",
+      "description": "### Example\r\n```html\r\n<zui-fab>\r\n   <zui-icon icon=\"zui-add\"></zui-icon>\r\n</zui-fab>\r\n```",
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "Use this attribute when you want to disable `zui-fab`",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Use this attribute when you want to disable `zui-fab`",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

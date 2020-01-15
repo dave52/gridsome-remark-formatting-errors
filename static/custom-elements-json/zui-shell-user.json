@@ -1,0 +1,389 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-user",
+      "description": "Topbar feature that encompasses information about the User Principle, User Profile, impersonation, and notifications.",
+      "attributes": [
+        {
+          "name": "given-name",
+          "description": "The first name of the user. It should be set to the `given_name` claim of the user principal. This may not yet be available on some principals, but will be back filled with profile information by an upcoming auth release. This component gracefully falls back to username.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "family-name",
+          "description": "The last name of the user. It should be set to the `family_name` claim of the user principal. This may not yet be available on some principals, but will be back filled with profile information by an upcoming auth release. This component gracefully falls back to username.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "profile-name",
+          "description": "This is the display name of the profile in context and will vary from profile type to profile type.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "profile-detail",
+          "description": "This is additional profile information displayed as subtext. It should generally represent the location and/or profile name. You may want to make this a function to ensure a clean rendering with the assumption of missing claims.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "username",
+          "description": "This is the username of the user. It should be set to the `preferred_username` claim of the user principal.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "manage-user-url",
+          "description": "This is a URL to user self service tool. It should be set to `https://profiles.zywave.com` per environment.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "logout-user-url",
+          "description": "This is a URL to the logout page of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "manage-profile-url",
+          "description": "This is a URL to the proper edit page for the profile in context.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "switch-profile-url",
+          "description": "This is a URL to the local switch profile path. **This should only be set if the user has multiple contextual profiles available.**",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "avatar",
+          "description": "This is a URI of the avatar of the user. It should be set to the \"picture\" claim of the user principal.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "user-header",
+          "description": "This is the text that appears above the user section. Should be set to localized \"User\".",
+          "type": "string",
+          "default": "\"User\""
+        },
+        {
+          "name": "profile-header",
+          "description": "This is the text that appears above the profile section. Should be set to localized phrase representing the profile type such as \"Agency Profile\", \"Employer Profile\" or just simply \"Profile\".",
+          "type": "string",
+          "default": "\"Profile\""
+        },
+        {
+          "name": "manage-user-text",
+          "description": "This is the text that appears as the manage user link. Should be set to localized \"Manage User\".",
+          "type": "string",
+          "default": "\"Manage user\""
+        },
+        {
+          "name": "logout-user-text",
+          "description": "This is the text that appears as the logout user link. Should be set to localized \"Logout\".",
+          "type": "string",
+          "default": "\"Log out\""
+        },
+        {
+          "name": "manage-profile-text",
+          "description": "This is the text that appears as the manage profile link. Should be set to localized \"Manage Profile\".",
+          "type": "string",
+          "default": "\"Manage profile\""
+        },
+        {
+          "name": "switch-profile-text",
+          "description": "This is the text that appears as the switch profile link. Should be set to localized \"Switch\".",
+          "type": "string",
+          "default": "\"Switch\""
+        },
+        {
+          "name": "open",
+          "description": "Boolean for when the user dropdown is open.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "notification-count",
+          "description": "This is the how many unread notifications the user/profile has. Get by calling Shared.Notifications Service.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "notification-header",
+          "description": "This is the text that appears above the notification section.",
+          "type": "string",
+          "default": "\"Notifications\""
+        },
+        {
+          "name": "notification-title",
+          "description": "This is the text that appears after the notification count in profile section.",
+          "type": "string",
+          "default": "\"New notifications\""
+        },
+        {
+          "name": "no-notification-title",
+          "description": "This is the text that appears when there are no new notifications in the notifications section of the user dropdown.",
+          "type": "string",
+          "default": "\"No new notifications\""
+        },
+        {
+          "name": "view-notifications-text",
+          "description": "This is the text that appears as the notification inbox link.",
+          "type": "string",
+          "default": "\"View all\""
+        },
+        {
+          "name": "view-notifications-url",
+          "description": "This is a URL to the notification inbox (ex: `dev-zh.zywave.com/notifications/inbox`).",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonating",
+          "description": "This property is required for all the impersonation properties to work and show.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "impersonating-action",
+          "description": "Text for the current user impersonating another profile.",
+          "type": "string",
+          "default": "\"acting as\""
+        },
+        {
+          "name": "impersonating-profile-name",
+          "description": "Name of the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonating-given-name",
+          "description": "First name of the user associated with the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonating-family-name",
+          "description": "Last name of the user associated with the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "givenName",
+          "attribute": "given-name",
+          "description": "The first name of the user. It should be set to the `given_name` claim of the user principal. This may not yet be available on some principals, but will be back filled with profile information by an upcoming auth release. This component gracefully falls back to username.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "familyName",
+          "attribute": "family-name",
+          "description": "The last name of the user. It should be set to the `family_name` claim of the user principal. This may not yet be available on some principals, but will be back filled with profile information by an upcoming auth release. This component gracefully falls back to username.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "profileName",
+          "attribute": "profile-name",
+          "description": "This is the display name of the profile in context and will vary from profile type to profile type.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "profileDetail",
+          "attribute": "profile-detail",
+          "description": "This is additional profile information displayed as subtext. It should generally represent the location and/or profile name. You may want to make this a function to ensure a clean rendering with the assumption of missing claims.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "username",
+          "attribute": "username",
+          "description": "This is the username of the user. It should be set to the `preferred_username` claim of the user principal.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "manageUserUrl",
+          "attribute": "manage-user-url",
+          "description": "This is a URL to user self service tool. It should be set to `https://profiles.zywave.com` per environment.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "logoutUserUrl",
+          "attribute": "logout-user-url",
+          "description": "This is a URL to the logout page of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "manageProfileUrl",
+          "attribute": "manage-profile-url",
+          "description": "This is a URL to the proper edit page for the profile in context.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "switchProfileUrl",
+          "attribute": "switch-profile-url",
+          "description": "This is a URL to the local switch profile path. **This should only be set if the user has multiple contextual profiles available.**",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "avatar",
+          "attribute": "avatar",
+          "description": "This is a URI of the avatar of the user. It should be set to the \"picture\" claim of the user principal.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "userHeader",
+          "attribute": "user-header",
+          "description": "This is the text that appears above the user section. Should be set to localized \"User\".",
+          "type": "string",
+          "default": "\"User\""
+        },
+        {
+          "name": "profileHeader",
+          "attribute": "profile-header",
+          "description": "This is the text that appears above the profile section. Should be set to localized phrase representing the profile type such as \"Agency Profile\", \"Employer Profile\" or just simply \"Profile\".",
+          "type": "string",
+          "default": "\"Profile\""
+        },
+        {
+          "name": "manageUserText",
+          "attribute": "manage-user-text",
+          "description": "This is the text that appears as the manage user link. Should be set to localized \"Manage User\".",
+          "type": "string",
+          "default": "\"Manage user\""
+        },
+        {
+          "name": "logoutUserText",
+          "attribute": "logout-user-text",
+          "description": "This is the text that appears as the logout user link. Should be set to localized \"Logout\".",
+          "type": "string",
+          "default": "\"Log out\""
+        },
+        {
+          "name": "manageProfileText",
+          "attribute": "manage-profile-text",
+          "description": "This is the text that appears as the manage profile link. Should be set to localized \"Manage Profile\".",
+          "type": "string",
+          "default": "\"Manage profile\""
+        },
+        {
+          "name": "switchProfileText",
+          "attribute": "switch-profile-text",
+          "description": "This is the text that appears as the switch profile link. Should be set to localized \"Switch\".",
+          "type": "string",
+          "default": "\"Switch\""
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "Boolean for when the user dropdown is open.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "notificationCount",
+          "attribute": "notification-count",
+          "description": "This is the how many unread notifications the user/profile has. Get by calling Shared.Notifications Service.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "notificationHeader",
+          "attribute": "notification-header",
+          "description": "This is the text that appears above the notification section.",
+          "type": "string",
+          "default": "\"Notifications\""
+        },
+        {
+          "name": "viewNotificationTitle",
+          "attribute": "notification-title",
+          "description": "This is the text that appears after the notification count in profile section.",
+          "type": "string",
+          "default": "\"New notifications\""
+        },
+        {
+          "name": "noNotificationTitle",
+          "attribute": "no-notification-title",
+          "description": "This is the text that appears when there are no new notifications in the notifications section of the user dropdown.",
+          "type": "string",
+          "default": "\"No new notifications\""
+        },
+        {
+          "name": "viewNotificationText",
+          "attribute": "view-notifications-text",
+          "description": "This is the text that appears as the notification inbox link.",
+          "type": "string",
+          "default": "\"View all\""
+        },
+        {
+          "name": "viewNotificationUrl",
+          "attribute": "view-notifications-url",
+          "description": "This is a URL to the notification inbox (ex: `dev-zh.zywave.com/notifications/inbox`).",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonating",
+          "attribute": "impersonating",
+          "description": "This property is required for all the impersonation properties to work and show.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "impersonatingAction",
+          "attribute": "impersonating-action",
+          "description": "Text for the current user impersonating another profile.",
+          "type": "string",
+          "default": "\"acting as\""
+        },
+        {
+          "name": "impersonatingProfileName",
+          "attribute": "impersonating-profile-name",
+          "description": "Name of the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonatingGivenName",
+          "attribute": "impersonating-given-name",
+          "description": "First name of the user associated with the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "impersonatingFamilyName",
+          "attribute": "impersonating-family-name",
+          "description": "Last name of the user associated with the profile the current user is impersonating.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "displayName",
+          "type": "string"
+        },
+        {
+          "name": "initials",
+          "type": "string"
+        },
+        {
+          "name": "impersonatingDisplayName",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-nav-item",
+      "description": "Child element of `zui-shell-nav` that renders into a link. Top-level menu items must be accompanied by an icon. Children menu-items do not need an icon.\r\n\r\n### Examples\r\nFor a top-level menu item with no children items\r\n```html\r\n<zui-shell-nav-item unresolved>\r\n   <zui-icon icon=\"zui-nav-home\" slot=\"icon\" unresolved></zui-icon>\r\n  Home\r\n</zui-shell-nav-item>\r\n```\r\nFor a top-level menu item with children items\r\n```html\r\n<zui-shell-nav-item unresolved>\r\n   <zui-icon icon=\"zui-nav-activities\" slot=\"icon\" unresolved></zui-icon>\r\n   Activities\r\n   <a href=\"#\">Basic</a>\r\n   <a href=\"#\">Account</a>\r\n   <a href=\"#\" active>Carrier</a>\r\n   <a href=\"#\">Mass add</a>\r\n<zui-shell-nav-item>",
+      "attributes": [
+        {
+          "name": "expanded",
+          "description": "This property becomes `true` when `<zui-shell-nav-item>` has children items and is expanded. All parent menu items are collapsed by default.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "subnav",
+          "description": "This property becomes `true` when there are more than one anchor tag in `<zui-shell-nav-item>`.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "expanded",
+          "attribute": "expanded",
+          "description": "This property becomes `true` when `<zui-shell-nav-item>` has children items and is expanded. All parent menu items are collapsed by default.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "subnav",
+          "attribute": "subnav",
+          "description": "This property becomes `true` when there are more than one anchor tag in `<zui-shell-nav-item>`.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "navitemclick"
+        }
+      ]
+    }
+  ]
+}

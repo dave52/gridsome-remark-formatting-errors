@@ -1,0 +1,65 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-apps-item",
+      "description": "Child element of `zui-shell-apps` that renders into a link for each product the user has access to.\r\n\r\n### Examples\r\nDefault\r\n```html\r\n<zui-shell-apps-item unresolved\r\n   slot=\"apps\"\r\n   name=\"Broker Briefcase\"\r\n   description=\"Growth & marketing platform\"\r\n   url=\"#\">\r\n</zui-shell-apps-item>\r\n```\r\n\r\nWith an optional target\r\n```html\r\n<zui-shell-apps-item unresolved\r\n   slot=\"apps\"\r\n   name=\"Broker Briefcase\"\r\n   description=\"Growth & marketing platform\"\r\n   url=\"#\"\r\n   target=\"_self\">\r\n</zui-shell-apps-item>\r\n```",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Name of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "description",
+          "description": "Description of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "url",
+          "description": "URL to the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "target",
+          "description": "Specify where to open the link. Default opens in a new tab. (Optional)",
+          "type": "string",
+          "default": "\"_blank\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "Name of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "description",
+          "attribute": "description",
+          "description": "Description of the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "url",
+          "attribute": "url",
+          "description": "URL to the application.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "target",
+          "attribute": "target",
+          "description": "Specify where to open the link. Default opens in a new tab. (Optional)",
+          "type": "string",
+          "default": "\"_blank\""
+        }
+      ]
+    }
+  ]
+}

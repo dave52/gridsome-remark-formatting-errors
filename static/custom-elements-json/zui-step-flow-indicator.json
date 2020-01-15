@@ -1,0 +1,50 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-step-flow-indicator",
+      "attributes": [
+        {
+          "name": "step",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "hide",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "default": "\"horizontal\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "step",
+          "attribute": "step",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "hide",
+          "attribute": "hide",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "type": "string",
+          "default": "\"horizontal\""
+        }
+      ],
+      "events": [
+        {
+          "name": "setstep"
+        }
+      ]
+    }
+  ]
+}

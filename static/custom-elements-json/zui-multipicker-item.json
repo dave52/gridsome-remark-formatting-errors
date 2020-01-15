@@ -1,0 +1,37 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-multipicker-item",
+      "attributes": [
+        {
+          "name": "identifier",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "selected",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "identifier",
+          "attribute": "identifier",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "selected",
+          "attribute": "selected",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    }
+  ]
+}

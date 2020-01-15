@@ -1,0 +1,65 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-apps",
+      "description": "`zui-shell-apps` is our product launchpad and is a topbar feature. This is the primary method of jumping from application to application. Consumers should set this up to only list products the user has access to.\r\n\r\n### Examples\r\nDefault\r\n```html\r\n<zui-shell-apps unresolved>\r\n   <zui-shell-apps-item unresolved\r\n     slot=\"apps\"\r\n     name=\"Broker Briefcase\"\r\n     description=\"Growth & marketing platform\"\r\n     url=\"#\">\r\n   </zui-shell-apps-item>\r\n</zui-shell-apps>\r\n```\r\n\r\nWith an optional \"view all apps\" link\r\n```html\r\n<zui-shell-apps all-apps-url=\"http://www.zywave.com\" all-apps-text=\"See all products\" unresolved>\r\n   <zui-shell-apps-item unresolved\r\n     slot=\"apps\"\r\n     name=\"Broker Briefcase\"\r\n     description=\"Growth & marketing platform\"\r\n     url=\"#\">\r\n   </zui-shell-apps-item>\r\n</zui-shell-apps>\r\n```",
+      "attributes": [
+        {
+          "name": "app-header",
+          "description": "Header for the apps dropdown. (Default: Apps)",
+          "type": "string",
+          "default": "\"Apps\""
+        },
+        {
+          "name": "all-apps-url",
+          "description": "Link to view all apps in a separate location.\r\nSet this property if you want the \"See all\" links\r\nto appear at the bottom of your apps list. (Optional)",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "all-apps-text",
+          "description": "Text for the link to view all apps in a separate location.\r\nWill not show up if `all-apps-url` is not set. (Optional)",
+          "type": "string",
+          "default": "\"See all\""
+        },
+        {
+          "name": "open",
+          "description": "Opens the dropdown menu when `open` is set to true.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "appHeader",
+          "attribute": "app-header",
+          "description": "Header for the apps dropdown. (Default: Apps)",
+          "type": "string",
+          "default": "\"Apps\""
+        },
+        {
+          "name": "allAppsUrl",
+          "attribute": "all-apps-url",
+          "description": "Link to view all apps in a separate location.\r\nSet this property if you want the \"See all\" links\r\nto appear at the bottom of your apps list. (Optional)",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "allAppsText",
+          "attribute": "all-apps-text",
+          "description": "Text for the link to view all apps in a separate location.\r\nWill not show up if `all-apps-url` is not set. (Optional)",
+          "type": "string",
+          "default": "\"See all\""
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "Opens the dropdown menu when `open` is set to true.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

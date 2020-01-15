@@ -1,0 +1,58 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-radio",
+      "description": "### Example\r\n```html\r\n<zui-radio checked></zui-radio>\r\n```",
+      "attributes": [
+        {
+          "name": "identifier",
+          "description": "The unique identifier of this radio element. Used for zui-radio-group integration",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "checked",
+          "description": "Whether or not this radio is checked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the user from being able to interact with the radio",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "identifier",
+          "attribute": "identifier",
+          "description": "The unique identifier of this radio element. Used for zui-radio-group integration",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "Whether or not this radio is checked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Disables the user from being able to interact with the radio",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "selected"
+        },
+        {
+          "name": "keydown"
+        }
+      ]
+    }
+  ]
+}

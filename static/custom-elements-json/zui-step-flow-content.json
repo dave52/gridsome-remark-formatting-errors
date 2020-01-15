@@ -1,0 +1,23 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-step-flow-content",
+      "attributes": [
+        {
+          "name": "step",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "step",
+          "attribute": "step",
+          "type": "number",
+          "default": "0"
+        }
+      ]
+    }
+  ]
+}

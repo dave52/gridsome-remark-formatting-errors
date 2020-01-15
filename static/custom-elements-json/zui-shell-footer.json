@@ -1,0 +1,9 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-footer",
+      "description": "### Example\r\n```html\r\n<zui-shell-footer unresolved>\r\n   <div>&copy; 1995 - 2019 Zywave, Inc. All rights reserved.</div>\r\n     <a class=\"zui-link\" target=\"_blank\" href=\"#\">Terms and Conditions</a>\r\n     <a class=\"zui-link\" target=\"_blank\" href=\"#\">Privacy Statement</a>\r\n     <a class=\"zui-link\" target=\"_blank\" href=\"#\">DMCA</a></div>\r\n     <a class=\"zui-link\" target=\"_blank\" href=\"#\">Cookie Usage</a>\r\n     <a class=\"zui-link\" href=\"#\">Contact</a>\r\n</zui-shell-footer>\r\n```"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-expander-group",
+      "attributes": [
+        {
+          "name": "multiselect",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "multiselect",
+          "attribute": "multiselect",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

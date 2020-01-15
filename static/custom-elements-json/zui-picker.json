@@ -1,0 +1,13 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-picker",
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    }
+  ]
+}

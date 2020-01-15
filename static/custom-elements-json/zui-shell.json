@@ -1,0 +1,26 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell",
+      "description": "The Shell must wrap all `zui-shell` components in order for applications to render styles and functions correctly.\r\n\r\n### Example\r\n```html\r\n<zui-shell app-name=\"ZUI Documentation\" unresolved>\r\n   <zui-shell-topbar unresolved></zui-shell-topbar>\r\n   <zui-shell-nav unresolved></zui-shell-nav>\r\n   <zui-shell-content unresolved></zui-shell-content>\r\n   <zui-shell-footer unresolved></zui-shell-footer>\r\n</zui-shell>\r\n```",
+      "attributes": [
+        {
+          "name": "app-name",
+          "description": "The user-friendly name for this application.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "appName",
+          "attribute": "app-name",
+          "description": "The user-friendly name for this application.",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    }
+  ]
+}

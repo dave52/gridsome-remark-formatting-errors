@@ -1,0 +1,61 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-expander",
+      "attributes": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "expand-label",
+          "type": "string",
+          "default": "\"See more\""
+        },
+        {
+          "name": "collapse-label",
+          "type": "string",
+          "default": "\"See Less\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "expandLabel",
+          "attribute": "expand-label",
+          "type": "string",
+          "default": "\"See more\""
+        },
+        {
+          "name": "collapseLabel",
+          "attribute": "collapse-label",
+          "type": "string",
+          "default": "\"See Less\""
+        }
+      ],
+      "events": [
+        {
+          "name": "openchanged"
+        }
+      ]
+    }
+  ]
+}

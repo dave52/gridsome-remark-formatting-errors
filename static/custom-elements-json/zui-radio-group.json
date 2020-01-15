@@ -1,0 +1,42 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-radio-group",
+      "description": "### Example\r\n```html\r\n<zui-radio-group select=\"1\">\r\n  <zui-radio identifier=\"1\" checked></zui-radio>\r\n  <zui-radio identifier=\"2\" checked></zui-radio>\r\n</zui-radio-group>\r\n```",
+      "attributes": [
+        {
+          "name": "selected",
+          "description": "The selected value associated with a corresponding zui-radio's identifier",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "description": "The label for this radio group used only for a11y purposes",
+          "default": "\"undefined\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "selected",
+          "attribute": "selected",
+          "description": "The selected value associated with a corresponding zui-radio's identifier",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The label for this radio group used only for a11y purposes",
+          "default": "\"undefined\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    }
+  ]
+}

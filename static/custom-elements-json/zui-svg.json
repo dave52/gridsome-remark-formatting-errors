@@ -1,0 +1,41 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-svg",
+      "attributes": [
+        {
+          "name": "svg-id",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "file",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "viewBox"
+        }
+      ],
+      "properties": [
+        {
+          "name": "svgId",
+          "attribute": "svg-id",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "file",
+          "attribute": "file",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "viewBox",
+          "attribute": "viewBox"
+        }
+      ]
+    }
+  ]
+}

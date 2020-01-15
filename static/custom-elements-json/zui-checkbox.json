@@ -1,0 +1,53 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-checkbox",
+      "attributes": [
+        {
+          "name": "checked",
+          "description": "Whether or not the checkbox is checked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "description": "Disables user from being able to interact with the checkbox",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "checked",
+          "attribute": "checked",
+          "description": "Whether or not the checkbox is checked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Disables user from being able to interact with the checkbox",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "To render label text, if applicable"
+        },
+        {
+          "name": "icon",
+          "description": "Used to create \"gallery\" checkboxes"
+        }
+      ]
+    }
+  ]
+}

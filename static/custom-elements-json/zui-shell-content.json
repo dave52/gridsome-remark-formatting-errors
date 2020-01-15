@@ -1,0 +1,9 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-shell-content",
+      "description": "### Example\r\n```html\r\n<zui-shell-content unresolved>\r\n   <div class=\"zui-layout\">\r\n     <h1>Hello world!</h1>\r\n   </div>\r\n</zui-shell-content>\r\n```"
+    }
+  ]
+}

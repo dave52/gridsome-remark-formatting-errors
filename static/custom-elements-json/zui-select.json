@@ -1,0 +1,68 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-select",
+      "attributes": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "selected",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "multiple",
+          "attribute": "multiple",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "selected",
+          "attribute": "selected",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ]
+    }
+  ]
+}

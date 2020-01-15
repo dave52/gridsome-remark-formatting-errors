@@ -1,0 +1,23 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-icon",
+      "attributes": [
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    }
+  ]
+}

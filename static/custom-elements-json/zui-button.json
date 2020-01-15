@@ -1,0 +1,26 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-button",
+      "description": "### Example\r\n```html\r\n<zui-button>\r\n   Add a contact\r\n</zui-button>\r\n\r\n<zui-button class=\"secondary\">\r\n   <zui-icon icon=\"zui-add\"></zui-icon>\r\n   Add a contact\r\n</zui-button>\r\n\r\n<zui-button class=\"icon-only\">\r\n   <zui-icon icon=\"zui-add\"></zui-icon>\r\n</zui-button>\r\n```",
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "Use this attribute when you want to disable `zui-button`",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Use this attribute when you want to disable `zui-button`",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

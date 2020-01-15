@@ -1,0 +1,43 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-option",
+      "attributes": [
+        {
+          "name": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hidden",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hidden",
+          "attribute": "hidden",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

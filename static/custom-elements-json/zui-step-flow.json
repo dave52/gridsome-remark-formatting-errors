@@ -1,0 +1,34 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "zui-step-flow",
+      "attributes": [
+        {
+          "name": "step",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "default": "\"horizontal\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "step",
+          "attribute": "step",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "type": "string",
+          "default": "\"horizontal\""
+        }
+      ]
+    }
+  ]
+}
